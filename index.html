@@ -1,0 +1,65 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>POS Retail System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+
+   
+<body>
+ <div id="demo"></div>
+ <table>
+    <tr bgcolor="#428ef6">
+        <td height="37" colspan="2"><div align="center"><strong>PLEASE LOGIN</strong></div></td>
+    </tr>
+
+    <tr>
+        <td width="95" height="32">Username</td>
+        <td width="304">
+            <input name="username" type="text"  id="username"/>
+        </td>
+    </tr>
+
+    <tr>
+        <td height="26">Password</td>
+        <td>
+            <input name="password" type="password" id="password"/>
+          </td>
+    </tr>
+
+    <tr>
+        <td height="48"> </td>
+        <td><button onclick="Login()">Login</button>
+            <button onclick="">Batal</button></td>
+    </tr>
+
+    <tr bgcolor="#428ef6">
+        <td height="26" colspan="2"><div align="center"><strong>Putra Jaya Computama</strong></div></td>
+    </tr>
+      </table>
+
+      <script>
+      function Login(){
+          var username=document.getElementById('username').value;
+          var password=document.getElementById('password').value;
+     if(username === 'admin' && password === 'admin'){
+        window.location = "formbarang.html";
+     }else {
+         alert("Sorry Bos, username dan password salah")
+          }
+      }
+     </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
